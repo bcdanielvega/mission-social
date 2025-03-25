@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+
+
 const config = {
   content: [
     './app/**/*.{ts,tsx}',
@@ -78,6 +81,8 @@ const config = {
         },
       },
       colors: {
+        almond: "#F2E5D7",
+        seasalt: "#F7F7F7",
         primary: {
           DEFAULT: 'hsl(var(--primary))',
           highlight: 'color-mix(in oklab, hsl(var(--primary)), white 75%)',

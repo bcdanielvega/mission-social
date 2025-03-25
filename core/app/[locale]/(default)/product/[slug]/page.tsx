@@ -57,6 +57,10 @@ const getProduct = async (props: Props) => {
 
   const customFields = removeEdgesAndNodes(product.customFields);
 
+  console.log(customFields);
+
+  let newCustomFields = customFields.filter((obj) => !obj.name.includes('__'));
+
   const specifications = [
     {
       name: t('sku'),
@@ -70,7 +74,7 @@ const getProduct = async (props: Props) => {
       name: t('condition'),
       value: product.condition,
     },
-    ...customFields.map((field) => ({
+    ...newCustomFields.map((field) => ({
       name: field.name,
       value: field.value,
     })),
@@ -83,7 +87,7 @@ const getProduct = async (props: Props) => {
             title: t('specifications'),
             content: (
               <div className="prose @container">
-                <dl className="flex flex-col gap-4">
+                <dl className="flex flex-col gap-2">
                   {specifications.map((field, index) => (
                     <div className="grid grid-cols-1 gap-2 @lg:grid-cols-2" key={index}>
                       <dt>

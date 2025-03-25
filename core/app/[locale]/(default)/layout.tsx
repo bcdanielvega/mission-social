@@ -17,7 +17,7 @@ export default async function DefaultLayout({ params, children }: Props) {
     <>
       <Header />
 
-      <main>{children}</main>
+      <main className='bg-seasalt'>{children}</main>
 
       <Footer />
     </>
