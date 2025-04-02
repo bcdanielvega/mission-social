@@ -1,6 +1,6 @@
 {
-  "name": "@bigcommerce/catalyst-core",
-  "description": "BigCommerce Catalyst is a Next.js starter kit for building headless BigCommerce storefronts.",
+  "name": "Mission Social - a BigCommerce Demo Store",
+  "description": "Mission Social is a BigCommerce Demo Store built with Catalyst, a Next.js ecommerce accelorator",
   "version": "1.0.0-rc",
   "private": true,
   "scripts": {
