@@ -22,17 +22,17 @@
     "graphql-codegen:watch": "graphql-codegen --watch -r dotenv/config --config codegen.ts dotenv_config_path=.env.local"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.0",
-    "@changesets/cli": "^2.27.12",
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.2",
     "dotenv-cli": "^8.0.0",
-    "turbo": "^2.3.4",
-    "typescript": "^5.7.3"
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@graphql-codegen/cli": "^5.0.5",
     "@graphql-codegen/introspection": "^4.0.3",
     "@graphql-codegen/typescript-graphql-request": "^6.2.0",
-    "contentful": "^11.5.10",
+    "contentful": "^11.5.14",
     "graphql": "^16.10.0",
     "graphql-request": "^7.1.2"
   }
